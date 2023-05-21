@@ -1,0 +1,74 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--gray-500);
+  padding: 1rem;
+  width: 100%;
+  min-height: 72px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.item:hover {
+  opacity: 0.7;
+}
+
+.item + .item {
+  margin-top: 0.75rem;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.content svg {
+  color: var(--purple-700);
+}
+
+.check {
+  border-radius: 50%;
+  border: 2px solid var(--blue-200);
+  background: transparent;
+  width: 17.45px;
+  height: 17.45px;
+}
+
+.text {
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  line-height: 1.4;
+  max-width: 632px;
+}
+
+.doneText {
+  font-size: 0.875rem;
+  color: var(--gray-300);
+  text-decoration: line-through;
+  line-height: 1.4;
+  max-width: 632px;
+}
+
+.item button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.item button:hover {
+  background: var(--gray-400);
+  border-radius: 4px;
+}
+
+.item button svg {
+  color: var(--gray-300);
+}
+
+.item button svg:hover {
+  color: var(--red-500);
+}
